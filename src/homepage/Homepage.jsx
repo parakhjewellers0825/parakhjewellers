@@ -7,6 +7,7 @@ import Collection from "./Collection";
 import Contact from "./Contact";
 import Banner from "./Banner";
 import FAQ from "./FAQ";
+import ServicesSection from "./Services";
 
 export default function Homepage() {
   return (
@@ -14,6 +15,7 @@ export default function Homepage() {
       <Hero />
       <About />
       <Collection />
+      <ServicesSection/>  
       <Banner/>
       <Contact/>
       <FAQ/>
