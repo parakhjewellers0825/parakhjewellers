@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import logo from "../assets/components/blacklogo.png"
 
 const Navbar = () => {
   const location = useLocation();
@@ -33,11 +34,12 @@ const Navbar = () => {
         showNavbar ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
       }`}
     >
-      <div className="relative w-full max-w-[1200px] px-6 py-4 flex justify-between items-center">
+      <div className="relative w-full max-w-[1200px] px-6 py-2 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-serif font-bold text-black cursor-pointer">
-          <a href="/">Parakh Jewellers</a>
-        </div>
+        <a href="/" className="text-2xl font-serif flex flex-col justify-center items-center font-bold text-black cursor-pointer">
+          <img src={logo} alt="" className="w-10"/>
+          <p className="text-xs">Parakh Jewellers</p>
+        </a>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">

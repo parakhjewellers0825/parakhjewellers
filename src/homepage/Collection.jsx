@@ -11,7 +11,7 @@ export default function App() {
     name: "Pearl Bird Necklace",
     price: "80000₹ - 89000₹",
     image:
-      "https://res.cloudinary.com/dzf1orh6a/image/upload/v1754889756/3796706_9644_fbtef0.jpg",
+      "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763208/DSC_4950_u8hado.jpg",
     onSale: true,
   };
 
@@ -22,7 +22,7 @@ export default function App() {
       description:
         "Litora egestas leo senectus sem mus luctus lorem magna accumsan pretium volutpat.",
       imageUrl:
-        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1754889918/12860_xcc3qx.jpg",
+        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763206/DSC_5021_u1vmtp.jpg",
     },
     {
       supertitle: "CIRCLE OF ELEGANCE",
@@ -30,7 +30,7 @@ export default function App() {
       description:
         "Litora egestas leo senectus sem mus luctus lorem magna accumsan pretium volutpat.",
       imageUrl:
-        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1754889803/2149509254_snxfe1.jpg",
+        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763212/DSC_4961_yz4owz.jpg",
     },
     {
       supertitle: "ELEGANCE IN EVERY PAIR",
@@ -38,7 +38,7 @@ export default function App() {
       description:
         "Embrace the Unseen Magic of Uniqueness. Where Elegance Finds.",
       imageUrl:
-        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1754890153/14325_xkzzf1.jpg",
+        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763205/DSC_4973_kmtzmm.jpg",
     },
     {
       supertitle: "ILLUMINATE IN YOUR LOOK",
@@ -46,7 +46,7 @@ export default function App() {
       description:
         "Litora egestas leo senectus sem mus luctus lorem magna accumsan pretium volutpat.",
       imageUrl:
-        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1754889826/1884_xqybum.jpg",
+        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763204/DSC_4988_mqxnfz.jpg",
     },
   ];
 

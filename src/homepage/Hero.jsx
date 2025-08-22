@@ -7,6 +7,7 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
+import logo from "../assets/components/whitelogo.png"
 
 const App = () => {
   // State to manage the mobile menu's visibility
@@ -31,12 +32,10 @@ const App = () => {
       >
         {/* Header Section */}
         <header className="flex items-center justify-between">
-          <div className="flex items-center gap-2 sm:gap-3">
-            <FaGem className="text-2xl sm:text-3xl text-white" />
-            <span className="text-xl sm:text-2xl font-semibold">
-              Parakh Jewellers
-            </span>
-          </div>
+          <a href="/" className="text-2xl font-serif flex flex-col justify-center items-center font-bold text-black cursor-pointer">
+                    <img src={logo} alt="" className="w-12"/>
+                    <p className="text-sm text-white font-sans">Parakh Jewellers</p>
+                  </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-4 lg:gap-8 bg-white/90 text-black font-semibold pl-6 pr-2 py-2 rounded-full">
@@ -154,7 +153,7 @@ const App = () => {
         )}
 
         {/* Main Content Area */}
-        <main className="mt-12 md:mt-16 flex flex-col md:flex-row items-center md:items-end justify-between gap-12">
+        <div className="mt-12 md:mt-8 flex flex-col md:flex-row items-center md:items-end justify-between gap-12">
           {/* Left Column: Main text and call to action */}
           <div className="w-full max-lg:flex max-lg:flex-col max-lg:justify-end max-lg:h-[50vh] text-center md:text-left">
             <h1
@@ -220,7 +219,7 @@ const App = () => {
               </div>
             </div>
           </div>
-        </main>
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaArrowRight } from 'react-icons/fa';
 
 const PlayIcon = () => (
   <svg
@@ -84,12 +85,16 @@ export default function JewelryHero() {
             Senectus suspendisse class facilisi sed ante vitae. Integer nascetur
             lacinia pulvinar maximus mauris netus.
           </p>
-          <button className="bg-[#A98158] text-white font-sans font-bold text-sm py-3 px-6 rounded-md flex items-center gap-2 hover:bg-amber-800 transition-colors">
-            Know More
-            <div className="bg-white/30 rounded-full p-1">
-              <ArrowRightIcon />
-            </div>
-          </button>
+          <div className="flex justify-center lg:justify-start">
+                       <a href="/contact">
+                          <button className="flex text-white items-center bg-[#D4AF37] gap-3 px-1 py-1 pl-5 rounded-full font-bold text-lg hover:bg-[#c99207] transition-colors group">
+                              Own the Moment
+                              <div className="bg-black rounded-full p-3 group-hover:scale-110 duration-300 transition-transform">
+                                <FaArrowRight size={20} />
+                              </div>
+                          </button>
+                      </a>
+                    </div>
         </div>
       </main>
     </div>
