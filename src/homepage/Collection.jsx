@@ -96,7 +96,7 @@ export default function App() {
               src={promoCardsData[0].imageUrl}
               alt={promoCardsData[0].title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
+            /><div className="absolute bg-black/40 w-full h-full"></div>
             <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center p-6 md:p-8 text-white">
               <div className="max-w-xs">
                 <p className="text-sm font-light tracking-widest uppercase">
@@ -169,7 +169,8 @@ export default function App() {
               src={promoCardsData[1].imageUrl}
               alt={promoCardsData[1].title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
+            />{" "}
+            <div className="absolute bg-black/40 w-full h-full"></div>
             <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center p-6 md:p-8 text-white">
               <div className="max-w-xs">
                 <p className="text-sm font-light tracking-widest uppercase">
@@ -198,7 +199,7 @@ export default function App() {
               src={promoCardsData[2].imageUrl}
               alt={promoCardsData[2].title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
+            /><div className="absolute bg-black/40 w-full h-full"></div>
             <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center p-6 md:p-8 text-white">
               <div className="max-w-xs">
                 <p className="text-sm font-light tracking-widest uppercase">
@@ -227,7 +228,7 @@ export default function App() {
               src={promoCardsData[3].imageUrl}
               alt={promoCardsData[3].title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
+            /><div className="absolute bg-black/40 w-full h-full"></div>
             <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center p-6 md:p-8 text-white">
               <div className="max-w-xs">
                 <p className="text-sm font-light tracking-widest uppercase">
