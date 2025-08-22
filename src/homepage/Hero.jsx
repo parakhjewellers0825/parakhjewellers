@@ -13,6 +13,33 @@ const App = () => {
   // State to manage the mobile menu's visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const clients = [
+  {
+    id: 1,
+    src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763216/DSC_5012_jgepgh.jpg",
+    alt: "Happy client 1",
+    placeholder: "C1",
+  },
+  {
+    id: 2,
+    src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763215/DSC_5003_s4rici.jpg",
+    alt: "Happy client 2",
+    placeholder: "C2",
+  },
+  {
+    id: 3,
+    src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763213/DSC_4955_abclqe.jpg",
+    alt: "Happy client 3",
+    placeholder: "C3",
+  },
+  {
+    id: 4,
+    src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763205/DSC_4973_kmtzmm.jpg",
+    alt: "Happy client 4",
+    placeholder: "C4",
+  },
+];
+
   return (
     // Main container with a background image, centered content, and responsive padding.
     <div
@@ -176,49 +203,31 @@ const App = () => {
 
           {/* Right Column: Social proof and detail cards */}
           <div className="w-full md:w-auto flex flex-col items-center md:items-end gap-6">
-            {/* Happy Clients Card */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 flex items-center gap-4 border border-white/10 w-full max-w-xs sm:max-w-sm md:max-w-xs">
-              <div className="flex w-full -space-x-4">
-                <img
-                  src="1"
-                  alt="client 1"
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src =
-                      "https://placehold.co/40x40/EFEFEF/333333?text=C1";
-                  }}
-                />
-                <img
-                  src="2"
-                  alt="client 2"
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src =
-                      "https://placehold.co/40x40/EFEFEF/333333?text=C2";
-                  }}
-                />
-                <img
-                  src="3"
-                  alt="client 3"
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src =
-                      "https://placehold.co/40x40/EFEFEF/333333?text=C3";
-                  }}
-                />
-                <div className="w-20 max-lg:w-10 h-10 rounded-full border-2 border-white flex items-center justify-center bg-gray-200/80">
-                  <FaPlus className="text-black/70" />
-                </div>
-              </div>
-              <div className="w-full">
-                <p className="font-bold text-xl">230+</p>
-                <p className="text-xs text-white/80">Best Collection</p>
-              </div>
-            </div>
-          </div>
+  {/* Happy Clients Card */}
+  <a href="/collections" className="bg-white/10 backdrop-blur-md rounded-2xl p-4 flex items-center gap-4 border border-white/10 w-full max-w-xs sm:max-w-sm md:max-w-xs">
+    {/* Client Avatars */}
+    <div className="flex flex-shrink-0 -space-x-4">
+      {clients.map((client) => (
+        <img
+          key={client.id}
+          src={client.src}
+          alt={client.alt}
+          className="w-10 h-10 rounded-full border-2 border-white object-cover"
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = `https://placehold.co/40x40/EFEFEF/333333?text=${client.placeholder}`;
+          }}
+        />
+      ))}
+    </div>
+
+    {/* Client Count Text */}
+    <div className="flex-grow lg:pr-10 max-lg:justify-center max-lg:items-center max-lg:flex max-lg:flex-col">
+      <p className="font-bold text-xl">230+</p>
+      <p className="text-xs text-white/80">Happy Clients</p>
+    </div>
+  </a>
+</div>
         </div>
       </div>
     </div>
