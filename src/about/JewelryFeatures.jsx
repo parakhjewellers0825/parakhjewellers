@@ -124,7 +124,7 @@ export default function JewelryFeatures() {
               className="bg-white p-8 text-center flex flex-col items-center relative overflow-hidden"
             >
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2 text-[#D4AF37]">{feature.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#4A2F28]">{feature.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 {feature.description}
               </p>

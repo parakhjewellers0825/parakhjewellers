@@ -37,7 +37,7 @@ export default function ServicesSection() {
     <section className="bg-gray-50 py-12 sm:py-16 lg:py-20 font-sans">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-[#D4AF37] sm:text-4xl">Our Services</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-[#4A2F28] sm:text-4xl">Our Services</h2>
           <p className="mt-4 text-lg leading-8 text-gray-600">
             Expert craftsmanship for all your jewelry needs.
           </p>
@@ -53,7 +53,7 @@ export default function ServicesSection() {
               <div className={`flex items-center justify-center rounded-md bg-gray-100 p-3 w-16 h-16 mx-auto`}>
                 {service.icon}
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-[#D4AF37] text-center">{service.title}</h3>
+              <h3 className="mt-5 text-lg font-semibold text-[#4A2F28] text-center">{service.title}</h3>
               <p className="mt-2 text-base text-gray-600 text-center">{service.description}</p>
             </div>
           ))}

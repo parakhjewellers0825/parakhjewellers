@@ -125,7 +125,7 @@ export default function App() {
             <p className="text-sm text-stone-500 tracking-widest uppercase">
               {featuredProduct.supertitle}
             </p>
-            <h2 className="text-4xl md:text-5xl font-serif text-[#D4AF37] my-4">
+            <h2 className="text-4xl md:text-5xl font-serif text-[#4A2F28] my-4">
               {featuredProduct.title}
             </h2>
             <div className="flex items-center rounded-md justify-center w-full max-w-sm my-6">

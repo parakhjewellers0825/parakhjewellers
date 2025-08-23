@@ -77,7 +77,7 @@ const About = () => {
           <p className="text-sm text-gray-500 uppercase tracking-widest mb-4">
             Jewels as unique as you
           </p>
-          <h1 className="text-3xl sm:text-4xl text-[#D4AF37] lg:text-5xl mb-6 font-serif">
+          <h1 className="text-3xl sm:text-4xl text-[#4A2F28] lg:text-5xl mb-6 font-serif">
             Commitment, Forever, In Every Sparkling Jewel
           </h1>
           <p className="text-gray-600 leading-relaxed mb-10 max-w-2xl mx-auto lg:mx-0">

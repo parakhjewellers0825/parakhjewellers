@@ -111,7 +111,7 @@ export default function JewelryAbout() {
             <p className="text-sm uppercase tracking-[0.2em] text-amber-800 mb-4">
               About Us
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#D4AF37] leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#4A2F28] leading-tight mb-6">
               Commitment, Forever, In Every Sparkling Jewel
             </h1>
             <p className="text-base text-gray-600 leading-relaxed mb-12">
