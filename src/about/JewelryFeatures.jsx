@@ -1,4 +1,7 @@
 import React from 'react'
+import { BsGem, BsCurrencyRupee } from 'react-icons/bs';
+import { TbCertificate } from 'react-icons/tb';
+import { RiExchangeLine } from 'react-icons/ri';
 
 // Icons for the Features section
 const GiftIcon = () => (
@@ -84,32 +87,32 @@ const BudgetIcon = () => (
 
 
 export default function JewelryFeatures() {
-  const features = [
-    {
-      icon: <GiftIcon />,
-      title: "Exclusive Gift",
-      description:
-        "Adipiscing Nostra Per Porttitor Tellus Lectus Cursus Inceptos.",
-    },
-    {
-      icon: <DiscountIcon />,
-      title: "Seasonal Discounts",
-      description:
-        "Conubia Turpis Amet Laoreet Faucibus Aenean Consectetur Pulvinar Metus.",
-    },
-    {
-      icon: <DeliveryIcon />,
-      title: "Free Delivery",
-      description:
-        "Turpis Ac Per Magnis Sagittis Consectetur Orci Imperdiet Pulvinar.",
-    },
-    {
-      icon: <BudgetIcon />,
-      title: "Budget-Friendly",
-      description:
-        "Placerat Mattis Class Lacinia Fusce Taciti Integer Consequat Mollis.",
-    },
-  ];
+ const features = [
+    {
+      icon: <BsGem size={30}  />,
+      title: "Best Design",
+      description:
+        "Our collection features exquisite and unique designs, crafted with precision and artistry to suit every style.",
+    },
+    {
+      icon: <TbCertificate size={30}  />,
+      title: "Certified Jewellery",
+      description:
+        "Every piece is hallmarked and certified for purity and authenticity, ensuring you get only the best quality.",
+    },
+    {
+      icon: <RiExchangeLine size={30} />,
+      title: "Easy Exchange",
+      description:
+        "We offer a hassle-free exchange policy. If you're not satisfied, easily exchange your purchase within 30 days.",
+    },
+    {
+      icon: <BsCurrencyRupee size={30} />,
+      title: "Budget-Friendly",
+      description:
+        "Discover stunning jewellery that fits your budget. We believe in providing beautiful, high-quality pieces at affordable prices.",
+    },
+  ];
 
   return (
     <div className="bg-white font-serif text-[#4A2F28] py-16 px-4 sm:px-8">
@@ -121,7 +124,7 @@ export default function JewelryFeatures() {
               className="bg-white p-8 text-center flex flex-col items-center relative overflow-hidden"
             >
               <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#D4AF37]">{feature.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 {feature.description}
               </p>

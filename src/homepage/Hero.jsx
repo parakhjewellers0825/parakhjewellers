@@ -7,38 +7,38 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
-import logo from "../assets/components/whitelogo.png"
+import logo from "../assets/components/whitelogo.png";
 
 const App = () => {
   // State to manage the mobile menu's visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const clients = [
-  {
-    id: 1,
-    src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763216/DSC_5012_jgepgh.jpg",
-    alt: "Happy client 1",
-    placeholder: "C1",
-  },
-  {
-    id: 2,
-    src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763215/DSC_5003_s4rici.jpg",
-    alt: "Happy client 2",
-    placeholder: "C2",
-  },
-  {
-    id: 3,
-    src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763213/DSC_4955_abclqe.jpg",
-    alt: "Happy client 3",
-    placeholder: "C3",
-  },
-  {
-    id: 4,
-    src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763205/DSC_4973_kmtzmm.jpg",
-    alt: "Happy client 4",
-    placeholder: "C4",
-  },
-];
+    {
+      id: 1,
+      src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763216/DSC_5012_jgepgh.jpg",
+      alt: "Happy client 1",
+      placeholder: "C1",
+    },
+    {
+      id: 2,
+      src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763215/DSC_5003_s4rici.jpg",
+      alt: "Happy client 2",
+      placeholder: "C2",
+    },
+    {
+      id: 3,
+      src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763213/DSC_4955_abclqe.jpg",
+      alt: "Happy client 3",
+      placeholder: "C3",
+    },
+    {
+      id: 4,
+      src: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763205/DSC_4973_kmtzmm.jpg",
+      alt: "Happy client 4",
+      placeholder: "C4",
+    },
+  ];
 
   return (
     // Main container with a background image, centered content, and responsive padding.
@@ -59,10 +59,13 @@ const App = () => {
       >
         {/* Header Section */}
         <header className="flex items-center justify-between">
-          <a href="/" className="text-2xl font-serif flex flex-col justify-center items-center font-bold text-black cursor-pointer">
-                    <img src={logo} alt="" className="w-12"/>
-                    <p className="text-sm text-white font-sans">Parakh Jewellers</p>
-                  </a>
+          <a
+            href="/"
+            className="text-2xl font-serif flex flex-col justify-center items-center font-bold text-black cursor-pointer"
+          >
+            <img src={logo} alt="" className="w-12" />
+            <p className="text-sm text-white font-sans">Parakh Jewellers</p>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-4 lg:gap-8 bg-white/90 text-black font-semibold pl-6 pr-2 py-2 rounded-full">
@@ -189,9 +192,10 @@ const App = () => {
             >
               Where Timeless Elegance Meets Eternity
             </h1>
-            <p className="mt-4 text-base text-white/80 max-w-md mx-auto md:mx-0">
-              Discover handcrafted jewelry designed to celebrate life's most
-              precious moments. Timeless beauty, ethically made with love.
+            <p className="mt-4 text-base text-white/80 max-w-xl mx-auto md:mx-0">
+              Blending tradition with modern elegance in Gold & Silver
+              jewellery crafted with trust and quality, serving Sadar Bazar,
+              Raipur (C.G.) since 2016.
             </p>
             <button className="mt-8 mx-auto md:mx-0 flex items-center gap-3 bg-white text-black pl-5 pr-1 py-1 rounded-full font-bold text-sm hover:bg-gray-200 transition-colors group">
               See Our Collections
@@ -203,31 +207,34 @@ const App = () => {
 
           {/* Right Column: Social proof and detail cards */}
           <div className="w-full md:w-auto flex flex-col items-center md:items-end gap-6">
-  {/* Happy Clients Card */}
-  <a href="/collections" className="bg-white/10 backdrop-blur-md rounded-2xl p-4 flex items-center gap-4 border border-white/10 w-full max-w-xs sm:max-w-sm md:max-w-xs">
-    {/* Client Avatars */}
-    <div className="flex flex-shrink-0 -space-x-4">
-      {clients.map((client) => (
-        <img
-          key={client.id}
-          src={client.src}
-          alt={client.alt}
-          className="w-10 h-10 rounded-full border-2 border-white object-cover"
-          onError={(e) => {
-            e.target.onerror = null;
-            e.target.src = `https://placehold.co/40x40/EFEFEF/333333?text=${client.placeholder}`;
-          }}
-        />
-      ))}
-    </div>
+            {/* Happy Clients Card */}
+            <a
+              href="/collections"
+              className="bg-white/10 backdrop-blur-md rounded-2xl p-4 flex items-center gap-4 border border-white/10 w-full max-w-xs sm:max-w-sm md:max-w-xs"
+            >
+              {/* Client Avatars */}
+              <div className="flex flex-shrink-0 -space-x-4">
+                {clients.map((client) => (
+                  <img
+                    key={client.id}
+                    src={client.src}
+                    alt={client.alt}
+                    className="w-10 h-10 rounded-full border-2 border-white object-cover"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = `https://placehold.co/40x40/EFEFEF/333333?text=${client.placeholder}`;
+                    }}
+                  />
+                ))}
+              </div>
 
-    {/* Client Count Text */}
-    <div className="flex-grow lg:pr-10 max-lg:justify-center max-lg:items-center max-lg:flex max-lg:flex-col">
-      <p className="font-bold text-xl">230+</p>
-      <p className="text-xs text-white/80">Happy Clients</p>
-    </div>
-  </a>
-</div>
+              {/* Client Count Text */}
+              <div className="flex-grow lg:pr-20 max-lg:justify-center max-lg:items-center max-lg:flex max-lg:flex-col">
+                <p className="font-bold text-xl">230+</p>
+                <p className="text-xs text-white/80">Collections</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>

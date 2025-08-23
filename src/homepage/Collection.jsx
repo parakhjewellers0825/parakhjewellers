@@ -18,33 +18,33 @@ export default function App() {
   const promoCardsData = [
     {
       supertitle: "CLASSIC CHARM",
-      title: "Grace Your Wrist",
+      title: "Golden Elegance",
       description:
-        "Litora egestas leo senectus sem mus luctus lorem magna accumsan pretium volutpat.",
+        "Celebrate life’s precious moments with our exclusive Gold Collection—crafted in timeless designs that blend tradition with modern grace.",
       imageUrl:
-        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763206/DSC_5021_u1vmtp.jpg",
+        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763205/DSC_4973_kmtzmm.jpg",
     },
     {
       supertitle: "CIRCLE OF ELEGANCE",
-      title: "Timeless Designs",
+      title: "Silver Grace",
       description:
-        "Litora egestas leo senectus sem mus luctus lorem magna accumsan pretium volutpat.",
+        "Discover the charm of our Silver Collection, where purity meets sophistication in ornaments perfect for every occasion.",
       imageUrl:
         "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763212/DSC_4961_yz4owz.jpg",
     },
     {
       supertitle: "ELEGANCE IN EVERY PAIR",
-      title: "Dazzling Designs",
+      title: "Everyday Trends",
       description:
-        "Embrace the Unseen Magic of Uniqueness. Where Elegance Finds.",
+        "A stylish range for today’s youth—featuring watches, bracelets, and chic accessories that define fashion with a bold statement.",
       imageUrl:
-        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763205/DSC_4973_kmtzmm.jpg",
+        "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763206/DSC_5021_u1vmtp.jpg",
     },
     {
       supertitle: "ILLUMINATE IN YOUR LOOK",
-      title: "Vintage Brooch",
+      title: "Blessings & Gifts",
       description:
-        "Litora egestas leo senectus sem mus luctus lorem magna accumsan pretium volutpat.",
+        "Sacred God murtis, coins, and gift pieces designed to bring blessings, prosperity, and joy to your loved ones.",
       imageUrl:
         "https://res.cloudinary.com/dzf1orh6a/image/upload/v1755763204/DSC_4988_mqxnfz.jpg",
     },
@@ -96,12 +96,13 @@ export default function App() {
               src={promoCardsData[0].imageUrl}
               alt={promoCardsData[0].title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            /><div className="absolute bg-black/40 w-full h-full"></div>
+            />
+            <div className="absolute bg-black/40 w-full h-full"></div>
             <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center p-6 md:p-8 text-white">
               <div className="max-w-xs">
-                <p className="text-sm font-light tracking-widest uppercase">
+                {/* <p className="text-sm font-light tracking-widest uppercase">
                   {promoCardsData[0].supertitle}
-                </p>
+                </p> */}
                 <h3 className="text-3xl md:text-4xl font-serif mt-2 mb-4">
                   {promoCardsData[0].title}
                 </h3>
@@ -124,41 +125,35 @@ export default function App() {
             <p className="text-sm text-stone-500 tracking-widest uppercase">
               {featuredProduct.supertitle}
             </p>
-            <h2 className="text-4xl md:text-5xl font-serif text-stone-800 my-4">
+            <h2 className="text-4xl md:text-5xl font-serif text-[#D4AF37] my-4">
               {featuredProduct.title}
             </h2>
-            <div className="flex items-center justify-center w-full max-w-sm my-6">
-              <button className="p-3 rounded-full hover:bg-stone-200 transition-colors duration-300">
-                <ArrowLeftIcon className="w-6 h-6 text-stone-700" />
-              </button>
+            <div className="flex items-center rounded-md justify-center w-full max-w-sm my-6">
               <div className="relative mx-4">
-                <img
-                  src={featuredProduct.image}
-                  alt={featuredProduct.name}
-                  className="w-full h-auto max-w-[250px] rounded-md"
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src =
-                      "https://placehold.co/400x400/f0ebe5/333333?text=Image+Error";
-                  }}
-                />
-                {featuredProduct.onSale && (
-                  <span className="absolute top-2 right-2 bg-stone-800 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    Sale
-                  </span>
-                )}
+                <video
+                  // NOTE: You'll need to update your data to have a video source, e.g., featuredProduct.videoUrl
+                  src="https://res.cloudinary.com/dzf1orh6a/video/upload/v1755930341/DSC_5167_uzzcix.mov"
+                  // Optional: use the original image as a placeholder before the video loads
+
+                  className="w-full h-auto rounded-md -rotate-90 py-20"
+                  autoPlay
+                  loop
+                  muted // autoPlay often requires the video to be muted in modern browsers
+                  // Shows player controls (play, pause, volume)
+                >
+                  Your browser does not support the video tag.
+                </video>
+
+                {/* The "Sale" badge is kept and will be positioned over the video */}
               </div>
-              <button className="p-3 rounded-full hover:bg-stone-200 transition-colors duration-300">
-                <ArrowRightIcon className="w-6 h-6 text-stone-700" />
-              </button>
             </div>
             <p className="text-stone-600">{featuredProduct.category}</p>
             <h4 className="text-2xl font-serif text-stone-800 mt-2">
               {featuredProduct.name}
             </h4>
-            <p className="text-lg text-stone-500 mt-1">
+            {/* <p className="text-lg text-stone-500 mt-1">
               {featuredProduct.price}
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -173,9 +168,9 @@ export default function App() {
             <div className="absolute bg-black/40 w-full h-full"></div>
             <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center p-6 md:p-8 text-white">
               <div className="max-w-xs">
-                <p className="text-sm font-light tracking-widest uppercase">
+                {/* <p className="text-sm font-light tracking-widest uppercase">
                   {promoCardsData[1].supertitle}
-                </p>
+                </p> */}
                 <h3 className="text-3xl md:text-4xl font-serif mt-2 mb-4">
                   {promoCardsData[1].title}
                 </h3>
@@ -199,12 +194,13 @@ export default function App() {
               src={promoCardsData[2].imageUrl}
               alt={promoCardsData[2].title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            /><div className="absolute bg-black/40 w-full h-full"></div>
+            />
+            <div className="absolute bg-black/40 w-full h-full"></div>
             <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center p-6 md:p-8 text-white">
               <div className="max-w-xs">
-                <p className="text-sm font-light tracking-widest uppercase">
+                {/* <p className="text-sm font-light tracking-widest uppercase">
                   {promoCardsData[2].supertitle}
-                </p>
+                </p> */}
                 <h3 className="text-3xl md:text-4xl font-serif mt-2 mb-4">
                   {promoCardsData[2].title}
                 </h3>
@@ -228,12 +224,13 @@ export default function App() {
               src={promoCardsData[3].imageUrl}
               alt={promoCardsData[3].title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            /><div className="absolute bg-black/40 w-full h-full"></div>
+            />
+            <div className="absolute bg-black/40 w-full h-full"></div>
             <div className="absolute inset-0 bg-opacity-40 flex flex-col justify-center p-6 md:p-8 text-white">
               <div className="max-w-xs">
-                <p className="text-sm font-light tracking-widest uppercase">
+                {/* <p className="text-sm font-light tracking-widest uppercase">
                   {promoCardsData[3].supertitle}
-                </p>
+                </p> */}
                 <h3 className="text-3xl md:text-4xl font-serif mt-2 mb-4">
                   {promoCardsData[3].title}
                 </h3>

@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import Banner from "./Banner";
 import FAQ from "./FAQ";
 import ServicesSection from "./Services";
+import JewelryFeatures from "../about/JewelryFeatures";
 
 export default function Homepage() {
   return (
@@ -15,6 +16,7 @@ export default function Homepage() {
       <Hero />
       <About />
       <Collection />
+      <JewelryFeatures/>
       <ServicesSection/>  
       <Banner/>
       <Contact/>

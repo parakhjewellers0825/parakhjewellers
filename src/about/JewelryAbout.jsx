@@ -1,4 +1,5 @@
 import React from "react";
+import { LuSparkles } from "react-icons/lu";
 
 const StarIcon = () => (
   <svg
@@ -21,6 +22,14 @@ const WOMAN_IMAGE_URL =
   "https://res.cloudinary.com/dzf1orh6a/image/upload/v1754638280/flamenco-dancer-model-blue-outfit-dance-updo-romantic-posing_i6daou.jpg";
 
 export default function JewelryAbout() {
+    const features = [
+    { title: "Brilliant Cut", desc: "Perfectly crafted for unmatched shine." },
+    { title: "High Clarity", desc: "Stones that glow with purity." },
+    { title: "Elegant Setting", desc: "Designed to highlight beauty." },
+    { title: "Natural Color", desc: "Authentic hues that speak luxury." },
+    { title: "Precise Carat", desc: "Honest weight, lasting value." },
+    { title: "Durable Metal", desc: "Strength and style in every design." },
+  ];
   return (
     <div className="bg-[#FDF8F2] font-serif text-[#4A2F28] py-16 flex items-center justify-center p-4 sm:p-8">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-6xl">
@@ -102,20 +111,18 @@ export default function JewelryAbout() {
             <p className="text-sm uppercase tracking-[0.2em] text-amber-800 mb-4">
               About Us
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Celebrate Life's Moments With Exquisite Jewelry
+            <h1 className="text-4xl md:text-5xl font-bold text-[#D4AF37] leading-tight mb-6">
+              Commitment, Forever, In Every Sparkling Jewel
             </h1>
             <p className="text-base text-gray-600 leading-relaxed mb-12">
-              Nunc in arcu et nunc scelerisque dignissim. Aliquam enim nunc,
-              volutpat eget ipsum id, varius sodales mi. Vestibulum ante ipsum
-              primis in faucibus orci luctus et ultrices posuere cubilia curae;
-              Vivamus ultricies sed erat et egestas. Phasellus ut ex lacus.
-              Donec volutpat lorem turpis, nec sodales.
+              At Parakh Jewellers, every piece is crafted with love, care, and a
+            promise that lasts forever. We believe your jewellery should reflect
+            your story—timeless, elegant, and truly yours.
             </p>
           </div>
 
           {/* Statistics Section */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
             <div className="border-t-2 border-amber-200 pt-4">
               <p className="text-4xl font-bold text-amber-900">20+</p>
               <p className="text-sm text-gray-500 mt-2">Worldwide Branch</p>
@@ -131,7 +138,21 @@ export default function JewelryAbout() {
               <p className="text-4xl font-bold text-amber-900">2K</p>
               <p className="text-sm text-gray-500 mt-2">User Reviews</p>
             </div>
-          </div>
+          </div> */}
+           <div className="grid text-left grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 mb-12 max-w-lg mx-auto lg:mx-0">
+                      {features.map((feature, index) => (
+                        <div
+                          key={index}
+                          className="flex items-start gap-2 text-gray-700 "
+                        >
+                          <LuSparkles className="mt-1" size={20} />
+                          <div>
+                            <p className="font-semibold">{feature.title}</p>
+                            <p className="text-sm text-gray-600">{feature.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
         </div>
       </div>
     </div>
