@@ -53,7 +53,7 @@ export default function ServicesSection() {
               <div className={`flex items-center justify-center rounded-md bg-gray-100 p-3 w-16 h-16 mx-auto`}>
                 {service.icon}
               </div>
-              <h3 className="mt-5 text-lg font-semibold text-[#4A2F28] text-center">{service.title}</h3>
+              <h3 className="mt-5 text-lg font-semibold text-[#4A2F28] font-serif text-center">{service.title}</h3>
               <p className="mt-2 text-base text-gray-600 text-center">{service.description}</p>
             </div>
           ))}

@@ -8,7 +8,8 @@ import Contact from "./Contact";
 import Banner from "./Banner";
 import FAQ from "./FAQ";
 import ServicesSection from "./Services";
-import JewelryFeatures from "../about/JewelryFeatures";
+import JewelryFeatures from "./JewelryFeatures";
+
 
 export default function Homepage() {
   return (
