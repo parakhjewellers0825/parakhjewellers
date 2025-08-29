@@ -6,21 +6,21 @@ export default function FeatureSection() {
   const sections = [
     {
       title: "Our Values",
-      description: "Our story unfolds over eighteen decades – inspired by the values of trust, purity, and transparency. Generations of the Gadgil family have employed their experience and expertise to abide by being a global hallmark of traditional designs while bringing a fresh twist to contemporary designs. A journey adorned with the values of goodness, creativity, and evolution!",
+      description: "Trust, transparency, craftsmanship, customer care, tradition with innovation, Warm, personalized service ensuring satisfaction and loyalty.",
       imageSrc: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1756101392/female-sales-person-jewelry-shop_fsyqa0.jpg",
       imageLeft: true,
       bgColor: 'bg-gray-50'
     },
     {
       title: "Our Vision",
-      description: "Building from our rich heritage and design expertise, we commit to being a preferred, global jewellery company delighting our customers and stakeholders.",
+      description: "To be Raipur’s most trusted jewellery destination, blending tradition with modern craftsmanship and creating timeless treasures that celebrate elegance and heritage.",
       imageSrc: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1756101127/young-couple-choosing-necklace-jewelry-store_sjbbuw.jpg",
       imageLeft: false,
       bgColor: 'bg-white'
     },
     {
       title: "Our Mission",
-      description: "Over the years, PNG Jewellers has been incredibly successful in enduring the beauty of traditions with a comprehensive product range of classic and contemporary jewellery collections across the globe. With a user-friendly shopping experience, we aim to fulfill our customers' shopping desires with the best services offline and make online shopping much more convenient and delightful from the comfort of a couch.",
+      description: "To deliver pure and high-quality gold and silver jewellery, offer personalized designs, polishing, and repairing services, and build lasting customer relationships with honesty and care.",
       imageSrc: "https://res.cloudinary.com/dzf1orh6a/image/upload/v1756101067/7614_cjzqeg.jpg",
       imageLeft: true,
       bgColor: 'bg-gray-50'
