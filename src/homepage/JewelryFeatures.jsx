@@ -89,7 +89,7 @@ const BudgetIcon = () => (
 export default function JewelryFeatures() {
  const features = [
     {
-      icon: <BsGem size={30}  />,
+      icon: <img src='https://res.cloudinary.com/dzf1orh6a/image/upload/v1756445469/jewelry_x5mufz.png' alt='' className='w-8 h-8'/>,
       title: "Best Design",
       description:
         "Our collection features exquisite and unique designs, crafted with precision and artistry to suit every style.",

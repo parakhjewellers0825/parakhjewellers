@@ -9,7 +9,7 @@ export default function ServicesSection() {
   const services = [
     {
       // Using a gem icon for jewellery - more direct and elegant
-      icon: <BsGem className="h-8 w-8 " />,
+      icon: <img src='https://res.cloudinary.com/dzf1orh6a/image/upload/v1756445856/necklace_muaz9o.png' alt='' className='w-10 h-10'/>,
       title: "Gold and Silver Jewellery",
       description: "Explore our exquisite collection of timeless gold and silver pieces, crafted to perfection.",
     },
