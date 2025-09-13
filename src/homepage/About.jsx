@@ -4,9 +4,9 @@ import { LuSparkles } from "react-icons/lu";
 
 // You can replace these with your actual image URLs
 const WOMAN_IMAGE_URL =
-  "https://res.cloudinary.com/dzf1orh6a/image/upload/v1754638280/flamenco-dancer-model-blue-outfit-dance-updo-romantic-posing_i6daou.jpg";
+  "https://res.cloudinary.com/dzf1orh6a/image/upload/v1756548940/ChatGPT_Image_Aug_30_2025_03_35_59_PM_hrt3be.png";
 const EARRING_IMAGE_URL =
-  "https://res.cloudinary.com/dzf1orh6a/image/upload/v1754638404/charming-model-with-dark-hair-shows-rich-golden-earrings-necklace-ring_z1v2ju.jpg";
+  "https://res.cloudinary.com/dzf1orh6a/image/upload/v1756548940/jhumka_fhos9p.png";
 
 // --- SVG Icons (Helper Components) ---
 

@@ -63,8 +63,8 @@ const App = () => {
             href="/"
             className="text-2xl font-serif flex flex-col justify-center items-center font-bold text-black cursor-pointer"
           >
-            <img src={logo} alt="" className="w-12" />
-            <p className="text-sm text-white font-sans">Parakh Jewellers</p>
+            <img src={logo} alt="" className="w-8 sm:w-12" />
+            <p className="text-xs sm:text-sm text-white font-sans">Parakh Jewellers</p>
           </a>
 
           {/* Desktop Navigation */}
@@ -187,20 +187,20 @@ const App = () => {
           {/* Left Column: Main text and call to action */}
           <div className="w-full max-lg:flex max-lg:flex-col max-lg:justify-end max-lg:h-[50vh] text-center md:text-left">
             <h1
-              className="text-5xl sm:text-6xl lg:text-8xl font-medium tracking-tight"
+              className="text-3xl sm:text-5xl lg:text-8xl font-medium tracking-tight"
               style={{ fontFamily: '"Cormorant Garamond", serif' }}
             >
               Where Timeless Elegance Meets Eternity
             </h1>
-            <p className="mt-4 text-base text-white/80 max-w-xl mx-auto md:mx-0">
+            <p className="mt-4 text-sm sm:text-base text-white/80 max-w-xl mx-auto md:mx-0">
               Blending tradition with modern elegance in Gold & Silver
               jewellery crafted with trust and quality, serving Sadar Bazar,
               Raipur (C.G.) since 2016.
             </p>
-            <button className="mt-8 mx-auto md:mx-0 flex items-center gap-3 bg-white text-black pl-5 pr-1 py-1 rounded-full font-bold text-sm hover:bg-gray-200 transition-colors group">
+            <button className="mt-8 mx-auto md:mx-0 flex items-center justify-between w-50 sm:w-52 gap-3 bg-white text-black pl-5 pr-1 py-1 rounded-full font-bold text-sm hover:bg-gray-200 transition-colors group">
               See Our Collections
               <div className="bg-[#D4AF37] text-white duration-300 rounded-full p-3 group-hover:scale-110 transition-transform">
-                <FaArrowRight size={20} />
+                <FaArrowRight className="w-5 max-sm:w-3 h-5 max-sm:h-3" />
               </div>
             </button>
           </div>

@@ -19,7 +19,7 @@ const StarIcon = () => (
 );
 
 const WOMAN_IMAGE_URL =
-  "https://res.cloudinary.com/dzf1orh6a/image/upload/v1754638280/flamenco-dancer-model-blue-outfit-dance-updo-romantic-posing_i6daou.jpg";
+  "https://res.cloudinary.com/dzf1orh6a/image/upload/v1756548940/ChatGPT_Image_Aug_30_2025_03_35_59_PM_hrt3be.png";
 
 export default function JewelryAbout() {
     const features = [

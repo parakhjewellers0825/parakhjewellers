@@ -34,7 +34,7 @@ const Navbar = () => {
         showNavbar ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
       }`}
     >
-      <div className="relative w-full max-w-[1200px] px-6 py-2 flex justify-between items-center">
+      <div className="relative w-full max-w-[1200px] max-xl:max-w-[900px] px-6 py-2 flex justify-between items-center">
         {/* Logo */}
         <a href="/" className="text-2xl font-serif flex flex-col justify-center items-center font-bold text-black cursor-pointer">
           <img src={logo} alt="" className="w-10"/>
